@@ -1,0 +1,51 @@
+<template>
+  <div class="app-menu">
+    <AppMenuLink img="paparac.png" name="paparac" path="/" alt="fern"/>
+    <AppMenuLink img="talerMoney.png" name="shop" path="/shop" alt="shop"/>
+    <AppMenuLink img="furnace.png" name="furnace" path="/furnace" alt="furnace"/>
+    <AppMenuLink img="encyclopedia.png" name="info" path="/encyclopedia" alt="encyclopedia"/>
+    <AppMenuLink img="gear.png" name="settings" path="/settings" alt="settings"/>
+  </div>
+</template>
+
+<script lang="ts">
+import AppMenuLink from '@/components/AppMenuLink.vue'
+
+export default {
+  name: 'AppMenu',
+  components: { AppMenuLink }
+}
+</script>
+
+<style scoped>
+  .app-menu {
+    padding: var(--padding);
+
+    display:         flex;
+    justify-content: center;
+    align-items:     center;
+    gap:             1.4rem;
+
+    overflow-y: auto;
+  }
+
+  .app-menu .router-link-active {
+    color:    var(--activeColor) !important;
+
+    position: relative;
+  }
+
+  .app-menu .router-link-active:before {
+    content: '';
+
+    background:    var(--activeColor);
+    border-radius: var(--borderRadius);
+
+    width:  100%;
+    height: 0.1rem;
+
+    position: absolute;
+    bottom:   -0.2rem;
+    left:     0;
+  }
+</style>
