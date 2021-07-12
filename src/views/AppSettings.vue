@@ -1,13 +1,16 @@
 <template>
-  <div class="app-page">
-    <h1>Settings</h1>
-    <img class="app-page-img" src="../assets/images/gear.png" alt="settings">
-  </div>
+  <AppPageWrapper>
+    <template #content>
+    </template>
+  </AppPageWrapper>
 </template>
 
 <script lang="ts">
+import AppPageWrapper from '@/components/AppPageWrapper.vue'
+
 export default {
-  name: 'AppSettings'
+  name: 'AppSettings',
+  components: { AppPageWrapper }
 }
 </script>
 

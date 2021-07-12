@@ -1,14 +1,16 @@
 <template>
-  <div class="app-page">
-    <h1>Info</h1>
-    <img class="app-page-img" src="../assets/images/encyclopedia.png" alt="encyclopedia">
-    <p>Version: 0.0.2</p>
-  </div>
+  <AppPageWrapper>
+    <template #content>
+    </template>
+  </AppPageWrapper>
 </template>
 
 <script lang="ts">
+import AppPageWrapper from '@/components/AppPageWrapper.vue'
+
 export default {
-  name: 'AppEncyclopedia'
+  name: 'AppEncyclopedia',
+  components: { AppPageWrapper }
 }
 </script>
 

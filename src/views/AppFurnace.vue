@@ -1,13 +1,16 @@
 <template>
-  <div class="app-page">
-    <h1>Furnace</h1>
-    <img class="app-page-img" src="../assets/images/furnace.png" alt="furnace">
-  </div>
+  <AppPageWrapper>
+    <template #content>
+    </template>
+  </AppPageWrapper>
 </template>
 
 <script lang="ts">
+import AppPageWrapper from '@/components/AppPageWrapper.vue'
+
 export default {
-  name: 'AppFurnace'
+  name: 'AppFurnace',
+  components: { AppPageWrapper }
 }
 </script>
 

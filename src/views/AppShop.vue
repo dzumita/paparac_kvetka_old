@@ -1,13 +1,16 @@
 <template>
-  <div class="app-page">
-    <h1>Shop</h1>
-    <img class="app-page-img" src="../assets/images/talerMoney.png" alt="taler">
-  </div>
+  <AppPageWrapper>
+    <template #content>
+    </template>
+  </AppPageWrapper>
 </template>
 
 <script lang="ts">
+import AppPageWrapper from '@/components/AppPageWrapper.vue'
+
 export default {
-  name: 'AppShop'
+  name: 'AppShop',
+  components: { AppPageWrapper }
 }
 </script>
 
