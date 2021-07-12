@@ -51,9 +51,10 @@ html, body {
   max-width:  var(--maxWidth);
   max-height: var(--maxHeight);
 
-  display:            grid;
-  grid-template-rows: calc(100% - 3.8rem) 3.8rem;
-  justify-content:    center;
+  display:               grid;
+  grid-template-rows:    calc(100% - 3.8rem) 3.8rem;
+  grid-template-columns: 1fr;
+  justify-content:       center;
 
   overflow: hidden;
 }
@@ -68,16 +69,6 @@ html, body {
 }
 
 /*~~~Temporarily~~~*/
-#app .app-page {
-  padding: var(--padding);
-
-  overflow: auto;
-}
-
-#app .app-page-img {
-  width: 5rem;
-}
-
 h1, p {
   margin: 0;
 }
