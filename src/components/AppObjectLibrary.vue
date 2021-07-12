@@ -1,6 +1,5 @@
 <template>
   <div class="object-library">
-    1, 2, 3, 4, 5
   </div>
 </template>
 
@@ -12,9 +11,16 @@ export default {
 
 <style scoped>
   .object-library {
-    border: 1px solid #000;
+    border:        2px solid var(--border);
+    border-radius: var(--borderRadius);
 
-    width: 100%;
-    padding:    var(--padding);
+    width:   100%;
+    height:  100%;
+    padding: var(--padding);
+
+    display:        grid;
+    gap:            var(--padding);
+    place-content:  start;
+    grid-auto-flow: column;
   }
 </style>

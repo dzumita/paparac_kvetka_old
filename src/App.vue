@@ -70,6 +70,8 @@ html, body {
 
 /*~~~Temporarily~~~*/
 h1, p {
+  width:  fit-content;
+  height: fit-content;
   margin: 0;
 }
 </style>
