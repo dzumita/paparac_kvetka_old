@@ -32,6 +32,10 @@ export default {
 <style scoped>
   .menu-link {
     user-select: none;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 
   .menu-link-img {
