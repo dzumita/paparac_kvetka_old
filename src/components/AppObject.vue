@@ -1,12 +1,22 @@
 <template>
   <div class="object">
-    <img class="object-image" src="../assets/images/furnace.png" alt="furnace">
+    <img class="object-img" :src="require(`../assets/images/objects/${img}.png`)" :alt="title" :title="title">
   </div>
 </template>
 
 <script lang="ts">
 export default {
-  name: 'AppObject'
+  name: 'AppObject',
+  props: {
+    img: {
+      type: String,
+      required: true
+    },
+    title: {
+      type: String,
+      required: false
+    }
+  }
 }
 </script>
 
@@ -15,13 +25,13 @@ export default {
     border:        2px solid var(--border);
     border-radius: var(--borderRadius);
 
-    width:  2.5rem;
-    height: 2.5rem;
+    width:  3rem;
+    height: 3rem;
 
     overflow: hidden;
   }
 
-  .object-image {
+  .object-img {
     width:  100%;
     height: 100%;
   }
