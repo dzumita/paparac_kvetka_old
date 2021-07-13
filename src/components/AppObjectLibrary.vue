@@ -3,7 +3,7 @@
     <div class="object-library-content">
       <AppObject v-for="element in elements" :key="element" img="empty" title="Empty"/>
       <AppObject v-for="element in elements" :key="element" img="fire" title="Fire"/>
-      <AppObject v-for="element in elements" :key="element" img="dirty" title="Dirty"/>
+      <AppObject v-for="element in elements" :key="element" img="dirtyBorder" title="Dirty"/>
       <AppObject v-for="element in elements" :key="element" img="water" title="Water"/>
       <AppObject v-for="element in elements" :key="element" img="energy" title="Energy"/>
       <AppObject v-for="element in elements" :key="element" img="firid" title="Firid"/>
