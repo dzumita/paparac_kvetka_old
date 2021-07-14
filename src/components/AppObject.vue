@@ -22,11 +22,8 @@ export default {
 
 <style scoped>
   .object {
-    border:        2px solid var(--border);
-    border-radius: var(--borderRadius);
-
-    width:  3rem;
-    height: 3rem;
+    width:  var(--objectIconSize);
+    height: var(--objectIconSize);
 
     overflow: hidden;
   }

@@ -41,6 +41,9 @@
   --zIndexLevel2: 100;
   --zIndexLevel1: 10;
   --zIndexLevel0: 0;
+
+  /*~~~ObjectLibrary~~~*/
+  --objectIconSize: 3rem;
 }
 
 *::selection {

@@ -17,7 +17,7 @@ export default {
   name: 'AppObjectLibrary',
   components: { AppObject },
   data () {
-    return { elements: 15 }
+    return { elements: 25 }
   }
 }
 </script>
@@ -37,8 +37,8 @@ export default {
     padding-right: var(--padding);
 
     display:               grid;
-    grid-template-columns: repeat(auto-fill, 3rem);
-    grid-template-rows:    repeat(auto-fill, 3rem);
+    grid-template-columns: repeat(auto-fill, var(--objectIconSize));
+    grid-template-rows:    repeat(auto-fill, var(--objectIconSize));
     grid-gap:              var(--padding);
     place-content:         space-between;
 
