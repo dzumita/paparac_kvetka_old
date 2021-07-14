@@ -1,16 +1,18 @@
 <template>
   <AppPageWrapper>
     <template #content>
+      <AppObjectLibrary/>
     </template>
   </AppPageWrapper>
 </template>
 
 <script lang="ts">
 import AppPageWrapper from '@/components/AppPageWrapper.vue'
+import AppObjectLibrary from '@/components/AppObjectLibrary.vue'
 
 export default {
   name: 'AppFurnace',
-  components: { AppPageWrapper }
+  components: { AppPageWrapper, AppObjectLibrary }
 }
 </script>
 
