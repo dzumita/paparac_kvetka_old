@@ -19,12 +19,4 @@ export default {
 
     overflow: auto;
   }
-
-  .app-page-img {
-    width: 5rem;
-  }
-
-  * + *:not(:first-child) {
-      margin-top: 0.5rem;
-  }
 </style>

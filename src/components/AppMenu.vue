@@ -30,7 +30,7 @@ export default {
   }
 
   .app-menu .router-link-active {
-    color:    var(--activeColor) !important;
+    color:var(--activeColor);
 
     position: relative;
   }
@@ -42,7 +42,7 @@ export default {
     border-radius: var(--borderRadius);
 
     width:  100%;
-    height: 0.1rem;
+    height: 2px;
 
     position: absolute;
     bottom:   -0.2rem;

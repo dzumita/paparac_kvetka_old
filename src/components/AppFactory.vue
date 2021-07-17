@@ -8,6 +8,7 @@
 
       <div class="factory-interface-result">
         <p>Result:</p>
+        <AppObjectLibrary/>
       </div>
     </div>
 
@@ -43,31 +44,34 @@ export default {
   .factory {
     width:   100%;
     height:  100%;
-    padding: var(--padding);
 
     display:               grid;
     grid-template-columns: 1fr 3fr;
-    gap:                   3rem;
+    gap:                   var(--padding);
+
+    overflow: hidden;
+  }
+
+  .factory-interface {
+    border:        var(--border);
+    border-radius: var(--borderRadius);
+
+    display: grid;
+
+    padding: var(--padding);
+    gap: 1rem;
 
     overflow: auto;
   }
 
-  .factory-interface,
   .factory-interface-active,
   .factory-interface-result {
     display:         flex;
     flex-direction:  column;
-    justify-content: space-around;
-  }
+    justify-content: start;
 
-  .factory-interface {
-    padding: var(--padding);
-    gap: 2rem;
-  }
-
-  .factory-interface-active,
-  .factory-interface-result {
     gap: 1rem;
+    overflow: auto;
   }
 
   .factory-interface-active img {

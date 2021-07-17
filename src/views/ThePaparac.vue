@@ -20,6 +20,6 @@ export default {
 
 <style scoped>
   * + *:not(:first-child) {
-      margin-top: 0.5rem;
+    margin-top: 0.5rem;
   }
 </style>

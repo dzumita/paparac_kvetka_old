@@ -32,9 +32,9 @@
 
   /*~~~Scroll~~~*/
   --scrollBarSize:       0.3rem;
-  --scrollBarBackground: var(--background);
+  --scrollBarBackground: transparent;
   --thumbBackground:     var(--activeColor);
-  --trackBackground:     var(--background);
+  --trackBackground:     transparent;
 
   /*~~~zIndex~~~*/
   --zIndexLevel5: 100000;

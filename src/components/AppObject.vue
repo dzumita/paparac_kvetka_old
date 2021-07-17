@@ -22,8 +22,9 @@ export default {
 
 <style scoped>
   .object {
-    background: transparent;
-    border: none;
+    background:    transparent;
+    border:        var(--border);
+    border-radius: var(--borderRadius);
 
     width:  var(--objectIconSize);
     height: var(--objectIconSize);

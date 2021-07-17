@@ -24,11 +24,14 @@ export default {
 
 <style scoped>
   .object-library {
+    border:        var(--border);
+    border-radius: var(--borderRadius);
+
     width:   100%;
     height:  100%;
     padding: var(--padding);
 
-    overflow: auto;
+    overflow: hidden;
   }
 
   .object-library-content {
