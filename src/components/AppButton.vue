@@ -16,20 +16,21 @@ export default {
 
 <style scoped>
   .button {
-    background: transparent;
-    border: 2px solid var(--activeColor);
+    background:    transparent;
+    border:        var(--border);
     border-radius: var(--borderRadius);
 
+    font-size:   var(--buttonFontSize);
     font-family: var(--mainFont);
-    color: var(--activeColor);
+    color:       var(--activeColor);
 
-    width: 100%;
-    height: 1.5rem;
+    width:   100%;
+    padding: calc(var(--padding) / 2) var(--padding);
 
     cursor: pointer;
   }
 
   .button:active {
-    transform: scale(0.90);
+    transform: var(--transformActive);
   }
 </style>
