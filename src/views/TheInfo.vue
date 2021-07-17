@@ -11,7 +11,7 @@ import AppPageWrapper from '@/components/AppPageWrapper.vue'
 import AppObjectLibrary from '@/components/AppObjectLibrary.vue'
 
 export default {
-  name: 'AppFurnace',
+  name: 'TheInfo',
   components: { AppPageWrapper, AppObjectLibrary }
 }
 </script>

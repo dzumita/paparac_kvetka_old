@@ -1,36 +1,36 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 
-import AppPaparac from '../views/AppPaparac.vue'
-import AppFurnace from '../views/AppFurnace.vue'
-import AppShop from '../views/AppShop.vue'
-import AppEncyclopedia from '../views/AppEncyclopedia.vue'
-import AppSettings from '../views/AppSettings.vue'
+import ThePaparac from '../views/ThePaparac.vue'
+import TheFurnace from '../views/TheFurnace.vue'
+import TheShop from '../views/TheShop.vue'
+import TheInfo from '../views/TheInfo.vue'
+import TheSettings from '../views/TheSettings.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Paparac',
-    component: AppPaparac
+    component: ThePaparac
   },
   {
     path: '/furnace',
     name: 'Furnace',
-    component: AppFurnace
+    component: TheFurnace
   },
   {
     path: '/shop',
     name: 'Shop',
-    component: AppShop
+    component: TheShop
   },
   {
-    path: '/encyclopedia',
-    name: 'Encyclopedia',
-    component: AppEncyclopedia
+    path: '/info',
+    name: 'info',
+    component: TheInfo
   },
   {
     path: '/settings',
     name: 'Settings',
-    component: AppSettings
+    component: TheSettings
   }
 ]
 

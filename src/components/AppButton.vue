@@ -20,9 +20,10 @@ export default {
     border:        var(--border);
     border-radius: var(--borderRadius);
 
-    font-size:   var(--buttonFontSize);
-    font-family: var(--mainFont);
-    color:       var(--activeColor);
+    font-size:      0.7rem;
+    font-family:    var(--mainFont);
+    color:          var(--activeColor);
+    text-transform: uppercase;
 
     width:   100%;
     padding: calc(var(--padding) / 2) var(--padding);

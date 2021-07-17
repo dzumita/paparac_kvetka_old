@@ -44,11 +44,8 @@
   --zIndexLevel1: 10;
   --zIndexLevel0: 0;
 
-  /*~~~ObjectLibrary~~~*/
+  /*~~~Object~~~*/
   --objectIconSize: 3.2rem;
-
-  /*~~~Button~~~*/
-  --buttonFontSize: 0.8rem;
 }
 
 *::selection {
