@@ -33,9 +33,15 @@ export default {
   .menu-link {
     user-select: none;
 
-    display: flex;
-    align-items: center;
+    display:        flex;
+    align-items:    center;
     flex-direction: column;
+
+    transition: var(--transition);
+  }
+
+  .menu-link:active {
+    transform: var(--transformActive);
   }
 
   .menu-link-img {
