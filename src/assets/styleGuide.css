@@ -6,9 +6,11 @@
 }
 
 :root {
-  --padding:      0.5rem;
-  --borderRadius: 8px;
-  --mainFont:     'uni0553', serif;
+  --padding:         0.5rem;
+  --borderRadius:    8px;
+  --border:          2px solid var(--activeColor);
+  --mainFont:        'uni0553', serif;
+  --transformActive: scale(0.85);
 
   /*~~~Font~~~*/
   font-family: var(--mainFont);
@@ -19,7 +21,6 @@
   --maxHeight: 2000px;
 
   /*~~~Colors~~~*/
-  --border:      var(--DarkPuce);
   --background:  var(--Flesh);
   --fontColor:   var(--DarkPurple);
   --activeColor: var(--DeepRuby);
@@ -44,6 +45,9 @@
 
   /*~~~ObjectLibrary~~~*/
   --objectIconSize: 3rem;
+
+  /*~~~Button~~~*/
+  --buttonFontSize: 0.8rem;
 }
 
 *::selection {
