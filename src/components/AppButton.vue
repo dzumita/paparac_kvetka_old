@@ -28,6 +28,8 @@ export default {
     padding: calc(var(--padding) / 2) var(--padding);
 
     cursor: pointer;
+
+    transition: var(--transition);
   }
 
   .button:active {

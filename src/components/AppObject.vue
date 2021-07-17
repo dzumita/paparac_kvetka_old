@@ -31,6 +31,8 @@ export default {
     overflow: hidden;
 
     cursor: pointer;
+
+    transition: var(--transition);
   }
 
   .object:active {
