@@ -16,20 +16,17 @@ import AppObject from '@/components/AppObject.vue'
 export default {
   name: 'AppObjectLibrary',
   components: { AppObject },
-  data () {
-    return { elements: 25 }
+  setup ():{elements:number} {
+    const elements = 25
+    return { elements }
   }
 }
 </script>
 
 <style scoped>
   .object-library {
-    border:        var(--border);
-    border-radius: var(--borderRadius);
-
     width:   100%;
     height:  100%;
-    padding: var(--padding);
 
     overflow: hidden;
   }
@@ -43,7 +40,7 @@ export default {
     grid-template-columns: repeat(auto-fill, var(--objectIconSize));
     grid-template-rows:    repeat(auto-fill, var(--objectIconSize));
     grid-gap:              var(--padding);
-    place-content:         space-between;
+    justify-content:       space-evenly;
 
     overflow: auto;
   }

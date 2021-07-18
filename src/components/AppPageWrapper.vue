@@ -16,6 +16,7 @@ export default {
     padding: var(--padding);
 
     display: grid;
+    gap:     var(--gap);
 
     overflow: auto;
   }

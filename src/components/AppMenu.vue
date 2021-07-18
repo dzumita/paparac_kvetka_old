@@ -24,7 +24,7 @@ export default {
     display:         flex;
     justify-content: center;
     align-items:     center;
-    gap:             1.4rem;
+    gap:             var(--gap);
 
     overflow-y: auto;
   }

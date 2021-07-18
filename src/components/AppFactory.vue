@@ -2,7 +2,6 @@
   <div class="factory">
     <div class="factory-interface">
       <div class="factory-interface-active">
-<!--        <img :src="require(`../assets/images/menu/${img}.png`)" :alt="alt">-->
         <AppButton :text="text"/>
       </div>
 
@@ -24,17 +23,9 @@ export default {
   name: 'AppFactory',
   components: { AppButton, AppObjectLibrary },
   props: {
-    img: {
-      type: String,
-      required: true
-    },
     text: {
       type: String,
       required: true
-    },
-    alt: {
-      type: String,
-      required: false
     }
   }
 }
@@ -46,20 +37,15 @@ export default {
     height:  100%;
 
     display:               grid;
-    grid-template-columns: 1fr 3fr;
-    gap:                   var(--padding);
+    grid-template-columns: 4fr 10fr;
+    gap:                   var(--gap);
 
     overflow: hidden;
   }
 
   .factory-interface {
-    border:        var(--border);
-    border-radius: var(--borderRadius);
-
     display: grid;
-
-    padding: var(--padding);
-    gap: 1rem;
+    gap:     var(--gap);
 
     overflow: auto;
   }
@@ -68,9 +54,9 @@ export default {
   .factory-interface-result {
     display:         flex;
     flex-direction:  column;
-    justify-content: start;
+    justify-content: flex-start;
+    gap:             1rem;
 
-    gap: 1rem;
     overflow: auto;
   }
 

@@ -14,9 +14,3 @@ export default {
   components: { AppPageWrapper }
 }
 </script>
-
-<style scoped>
-  * + *:not(:first-child) {
-    margin-top: 0.5rem;
-  }
-</style>
