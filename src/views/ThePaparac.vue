@@ -9,8 +9,8 @@
 
 <script lang="ts">
 import AppPageWrapper from '@/components/AppPageWrapper.vue'
-import AppObjectLibrary from '@/components/AppObjectLibrary.vue'
-import AppFactory from '@/components/AppFactory.vue'
+import AppObjectLibrary from '@/components/object/AppObjectLibrary.vue'
+import AppFactory from '@/components/object/AppFactory.vue'
 
 export default {
   name: 'ThePaparac',

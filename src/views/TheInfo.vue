@@ -8,7 +8,7 @@
 
 <script lang="ts">
 import AppPageWrapper from '@/components/AppPageWrapper.vue'
-import AppObjectLibrary from '@/components/AppObjectLibrary.vue'
+import AppObjectLibrary from '@/components/object/AppObjectLibrary.vue'
 
 export default {
   name: 'TheInfo',

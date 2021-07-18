@@ -16,7 +16,7 @@
 </template>
 
 <script lang="ts">
-import AppObjectLibrary from '@/components/AppObjectLibrary.vue'
+import AppObjectLibrary from '@/components/object/AppObjectLibrary.vue'
 import AppButton from '@/components/AppButton.vue'
 
 export default {

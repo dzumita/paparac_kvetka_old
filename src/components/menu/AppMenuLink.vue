@@ -1,6 +1,6 @@
 <template>
   <router-link class="menu-link" :to="{ path }">
-    <img class="menu-link-img" :src="require(`../assets/images/menu/${img}.png`)" :alt="alt">
+    <img class="menu-link-img" :src="require(`../../assets/images/menu/${img}.png`)" :alt="alt">
     <p class="menu-link-text">{{name}}</p>
   </router-link>
 </template>

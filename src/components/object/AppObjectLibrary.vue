@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-import AppObject from '@/components/AppObject.vue'
+import AppObject from '@/components/object/AppObject.vue'
 
 export default {
   name: 'AppObjectLibrary',

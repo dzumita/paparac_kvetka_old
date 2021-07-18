@@ -9,7 +9,7 @@
 </template>
 
 <script lang="ts">
-import AppMenuLink from '@/components/AppMenuLink.vue'
+import AppMenuLink from '@/components/menu/AppMenuLink.vue'
 
 export default {
   name: 'AppMenu',
