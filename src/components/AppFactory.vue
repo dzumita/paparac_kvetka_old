@@ -37,7 +37,7 @@ export default {
     height:  100%;
 
     display:               grid;
-    grid-template-columns: 4fr 10fr;
+    grid-template-columns: 5fr 10fr;
     gap:                   var(--gap);
 
     overflow: hidden;
