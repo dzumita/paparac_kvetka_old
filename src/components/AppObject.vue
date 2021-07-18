@@ -40,6 +40,13 @@ export default {
     transform: var(--transformActive);
   }
 
+  .object:focus {
+    outline:      none;
+    background:   var(--LightDesertSand);
+    filter:       grayscale(50%);
+    border-color: var(--Tumbleweed);
+  }
+
   .object-img {
     width:  100%;
     height: 100%;
