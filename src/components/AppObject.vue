@@ -31,7 +31,8 @@ export default {
 
     overflow: hidden;
 
-    cursor: pointer;
+    user-select: none;
+    cursor:      pointer;
 
     transition: var(--transition);
   }
@@ -42,9 +43,9 @@ export default {
 
   .object:focus {
     outline:      none;
-    background:   var(--LightDesertSand);
-    filter:       grayscale(50%);
-    border-color: var(--Tumbleweed);
+    background:   var(--focusBackground);
+    filter:       var(--focusFilter);
+    border-color: var(--focusBorder);
   }
 
   .object-img {

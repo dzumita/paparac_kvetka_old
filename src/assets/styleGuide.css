@@ -37,6 +37,11 @@
   --thumbBackground:     var(--activeColor);
   --trackBackground:     transparent;
 
+  /*~~~Focus~~~*/
+  --focusBackground: var(--LightDesertSand);
+  --focusBorder:     var(--Tumbleweed);
+  --focusFilter:     grayscale(50%);
+
   /*~~~zIndex~~~*/
   --zIndexLevel5: 100000;
   --zIndexLevel4: 10000;

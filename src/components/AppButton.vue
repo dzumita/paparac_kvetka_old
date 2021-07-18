@@ -29,11 +29,19 @@ export default {
     padding: calc(var(--padding) / 2) var(--padding);
 
     cursor: pointer;
+    user-select: none;
 
     transition: var(--transition);
   }
 
   .button:active {
     transform: var(--transformActive);
+  }
+
+  .button:focus {
+    outline:      none;
+    background:   var(--focusBackground);
+    filter:       var(--focusFilter);
+    border-color: var(--focusBorder);
   }
 </style>
