@@ -19,14 +19,22 @@ export default {
       { id: 0, name: 'empty' },
       { id: 1, name: 'antiempty' },
       { id: 2, name: 'dirty' },
-      { id: 3, name: 'water' },
-      { id: 4, name: 'fire' },
-      { id: 5, name: 'firid' },
-      { id: 6, name: 'watenid' },
-      { id: 7, name: 'strumenid' },
-      { id: 8, name: 'energy' },
-      { id: 9, name: 'energyClass' },
-      { id: 10, name: 'dirtyClass' }
+      { id: 3, name: 'dirtyClass' },
+      { id: 4, name: 'dust' },
+      { id: 5, name: 'earid' },
+      { id: 6, name: 'empty' },
+      { id: 7, name: 'energy' },
+      { id: 8, name: 'energyClass' },
+      { id: 9, name: 'fire' },
+      { id: 10, name: 'fireClass' },
+      { id: 11, name: 'firid' },
+      { id: 12, name: 'sand' },
+      { id: 13, name: 'stone' },
+      { id: 14, name: 'strumenid' },
+      { id: 15, name: 'unknow' },
+      { id: 16, name: 'watenid' },
+      { id: 17, name: 'water' },
+      { id: 18, name: 'waterClass' }
     ]
 
     return { inventory }
