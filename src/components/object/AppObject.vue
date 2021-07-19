@@ -1,8 +1,8 @@
 <template>
   <button class="object">
     <picture>
-      <source type="image/webp" :srcset="require(`../../assets/img/objects/${img}.webp`)">
-      <img class="object-img" :src="require(`../../assets/img/objects/${img}.png`)" :alt="title">
+      <source type="image/webp" :srcset="require(`../../assets/img/objects/${name}.webp`)">
+      <img class="object-img" :src="require(`../../assets/img/objects/${name}.png`)" :alt="name">
     </picture>
   </button>
 </template>
@@ -11,14 +11,9 @@
 export default {
   name: 'AppObject',
   props: {
-    img: {
+    name: {
       type: String,
       required: true
-    },
-    title: {
-      type: String,
-      required: false,
-      default: 'object'
     }
   }
 }

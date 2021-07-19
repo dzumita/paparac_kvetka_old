@@ -1,11 +1,11 @@
 <template>
   <div class="object-library">
     <div class="object-library-content">
-      <AppObject v-for="element in elements" :key="element" img="empty" title="Empty"/>
-      <AppObject v-for="element in elements" :key="element" img="fire" title="Fire"/>
-      <AppObject v-for="element in elements" :key="element" img="water" title="Water"/>
-      <AppObject v-for="element in elements" :key="element" img="energy" title="Energy"/>
-      <AppObject v-for="element in elements" :key="element" img="firid" title="Firid"/>
+      <AppObject v-for="element in elements" :key="element" name="empty"/>
+      <AppObject v-for="element in elements" :key="element" name="fire"/>
+      <AppObject v-for="element in elements" :key="element" name="water"/>
+      <AppObject v-for="element in elements" :key="element" name="energy"/>
+      <AppObject v-for="element in elements" :key="element" name="firid"/>
     </div>
   </div>
 </template>
