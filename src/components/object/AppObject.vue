@@ -1,6 +1,9 @@
 <template>
   <button class="object">
-    <img class="object-img" :src="require(`../../assets/img/objects/${img}.png`)" :alt="title" :title="title">
+    <picture>
+      <source type="image/webp" :srcset="require(`../../assets/img/objects/${img}.webp`)">
+      <img class="object-img" :src="require(`../../assets/img/objects/${img}.png`)" :alt="title">
+    </picture>
   </button>
 </template>
 

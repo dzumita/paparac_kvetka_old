@@ -1,6 +1,9 @@
 <template>
   <router-link class="menu-link" :to="{ path }">
-    <img class="menu-link-img" :src="require(`../../assets/img/menu/${img}.png`)" :alt="alt">
+    <picture>
+      <source type="image/webp" :srcset="require(`../../assets/img/menu/${img}.webp`)">
+      <img class="menu-link-img" :src="require(`../../assets/img/menu/${img}.png`)" :alt="alt">
+    </picture>
     <p class="menu-link-text">{{name}}</p>
   </router-link>
 </template>
