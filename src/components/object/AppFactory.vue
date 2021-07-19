@@ -1,19 +1,19 @@
 <template>
   <div class="factory">
     <div class="factory-interface">
-      <div class="factory-interface-active">
-        <AppButton :text="text"/>
-      </div>
-
       <div class="factory-interface-result">
         <p>Result:</p>
-        <AppObjectLibrary/>
+        <AppObjectLibrary :objects="result"/>
+      </div>
+
+      <div class="factory-interface-active">
+        <AppButton :text="text"/>
       </div>
     </div>
 
     <div class="factory-list">
       <p>Objects for {{text}}:</p>
-      <AppObjectLibrary/>
+      <AppObjectLibrary :objects="list"/>
     </div>
   </div>
 </template>
@@ -30,6 +30,15 @@ export default {
       type: String,
       required: true
     }
+  },
+  setup () {
+    const list = [
+      { id: 11, name: 'waterClass' },
+      { id: 12, name: 'fireClass' },
+      { id: 13, name: 'earid' }
+    ]
+    const result = [{ id: 0, name: 'empty' }]
+    return { list, result }
   }
 }
 </script>

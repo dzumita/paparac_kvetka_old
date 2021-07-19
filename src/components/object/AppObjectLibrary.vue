@@ -1,11 +1,7 @@
 <template>
   <div class="object-library">
     <div class="object-library-content">
-      <AppObject v-for="element in elements" :key="element" name="empty"/>
-      <AppObject v-for="element in elements" :key="element" name="fire"/>
-      <AppObject v-for="element in elements" :key="element" name="water"/>
-      <AppObject v-for="element in elements" :key="element" name="energy"/>
-      <AppObject v-for="element in elements" :key="element" name="firid"/>
+      <AppObject v-for="object in objects" :key="object.id" :name="object.name"/>
     </div>
   </div>
 </template>
@@ -16,7 +12,13 @@ import AppObject from '@/components/object/AppObject.vue'
 export default {
   name: 'AppObjectLibrary',
   components: { AppObject },
-  setup ():{elements:number} {
+  props: {
+    objects: {
+      type: Array,
+      required: true
+    }
+  },
+  setup (): { elements:number } {
     const elements = 25
     return { elements }
   }
