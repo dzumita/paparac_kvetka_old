@@ -1,10 +1,10 @@
 <template>
   <div class="app-menu">
-    <AppMenuLink img="paparac" name="paparac" path="/" alt="fern"/>
-    <AppMenuLink img="shop" name="shop" path="/shop" alt="shop"/>
-    <AppMenuLink img="furnace" name="furnace" path="/furnace" alt="furnace"/>
-    <AppMenuLink img="info" name="info" path="/info" alt="info"/>
-    <AppMenuLink img="settings" name="settings" path="/settings" alt="settings"/>
+    <AppMenuLink name="paparac" path="/"/>
+    <AppMenuLink name="shop" path="/shop"/>
+    <AppMenuLink name="furnace" path="/furnace"/>
+    <AppMenuLink name="info" path="/info"/>
+    <AppMenuLink name="settings" path="/settings"/>
   </div>
 </template>
 

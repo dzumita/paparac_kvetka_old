@@ -1,8 +1,8 @@
 <template>
   <router-link class="menu-link" :to="{ path }">
     <picture>
-      <source type="image/webp" :srcset="require(`../../assets/img/menu/${img}.webp`)">
-      <img class="menu-link-img" :src="require(`../../assets/img/menu/${img}.png`)" :alt="alt">
+      <source type="image/webp" :srcset="require(`../../assets/img/menu/${name}.webp`)">
+      <img class="menu-link-img" :src="require(`../../assets/img/menu/${name}.png`)" :alt="name">
     </picture>
     <p class="menu-link-text">{{name}}</p>
   </router-link>
@@ -16,18 +16,9 @@ export default {
       type: String,
       required: true
     },
-    img: {
-      type: String,
-      required: true
-    },
     path: {
       type: String,
       required: true
-    },
-    alt: {
-      type: String,
-      required: false,
-      default: 'link'
     }
   }
 }
