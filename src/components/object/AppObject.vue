@@ -14,7 +14,8 @@ export default {
     },
     title: {
       type: String,
-      required: false
+      required: false,
+      default: 'object'
     }
   }
 }

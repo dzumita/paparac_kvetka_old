@@ -23,7 +23,8 @@ export default {
     },
     alt: {
       type: String,
-      required: false
+      required: false,
+      default: 'link'
     }
   }
 }
