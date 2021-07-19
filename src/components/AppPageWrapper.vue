@@ -6,7 +6,14 @@
 
 <script lang="ts">
 export default {
-  name: 'AppPageWrapper'
+  name: 'AppPageWrapper',
+  props: {
+    gridRows: {
+      type: String,
+      required: false,
+      default: 'auto'
+    }
+  }
 }
 </script>
 
@@ -17,6 +24,7 @@ export default {
 
     display: grid;
     gap:     var(--gap);
+    grid-template-rows: v-bind(gridRows);
 
     overflow: auto;
   }
