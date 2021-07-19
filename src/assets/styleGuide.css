@@ -51,7 +51,7 @@
   --zIndexLevel0: 0;
 
   /*~~~Object~~~*/
-  --objectIconSize: 3.2rem;
+  --objectIconSize: 3.5rem;
 }
 
 *::selection {
@@ -73,6 +73,15 @@
 
 *::-webkit-scrollbar-track {
   background-color: var(--trackBackground);
+}
+
+/*~~~Text~~~*/
+h1, p, span {
+  font-family: var(--mainFont);
+
+  width:  fit-content;
+  height: fit-content;
+  margin: 0;
 }
 
 /*~~~Adaptive~~~*/

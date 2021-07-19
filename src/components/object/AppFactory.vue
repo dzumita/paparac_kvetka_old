@@ -33,11 +33,11 @@ export default {
   },
   setup () {
     const list = [
-      { id: 11, name: 'waterClass' },
-      { id: 12, name: 'fireClass' },
-      { id: 13, name: 'earid' }
+      { id: 11, name: 'waterClass', count: '1' },
+      { id: 12, name: 'fireClass', count: '1' },
+      { id: 13, name: 'earid', count: '1' }
     ]
-    const result = [{ id: 0, name: 'empty' }]
+    const result = [{ id: 15, name: 'unknow', count: '1' }]
     return { list, result }
   }
 }

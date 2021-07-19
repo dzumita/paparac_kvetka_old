@@ -4,6 +4,7 @@
       <source type="image/webp" :srcset="require(`../../assets/img/objects/${name}.webp`)">
       <img class="object-img" :src="require(`../../assets/img/objects/${name}.png`)" :alt="name">
     </picture>
+    <span class="object-count">{{count}}</span>
   </button>
 </template>
 
@@ -12,6 +13,10 @@ export default {
   name: 'AppObject',
   props: {
     name: {
+      type: String,
+      required: true
+    },
+    count: {
       type: String,
       required: true
     }
@@ -25,8 +30,11 @@ export default {
     border:        var(--border);
     border-radius: var(--borderRadius);
 
-    width:  var(--objectIconSize);
-    height: var(--objectIconSize);
+    width:   var(--objectIconSize);
+    height:  var(--objectIconSize);
+    padding: var(--padding);
+
+    position: relative;
 
     overflow: hidden;
 
@@ -54,5 +62,13 @@ export default {
   .object-img {
     width:  100%;
     height: 100%;
+  }
+
+  .object-count {
+    color: var(--activeColor);
+
+    position: absolute;
+    bottom:   0.1rem;
+    right:    0.1rem;
   }
 </style>

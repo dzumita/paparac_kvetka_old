@@ -1,7 +1,7 @@
 <template>
   <div class="object-library">
     <div class="object-library-content">
-      <AppObject v-for="object in objects" :key="object.id" :name="object.name"/>
+      <AppObject v-for="object in objects" :key="object.id" :name="object.name" :count="object.count"/>
     </div>
   </div>
 </template>
