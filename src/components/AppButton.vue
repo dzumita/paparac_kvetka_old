@@ -28,7 +28,7 @@ export default {
     width:   100%;
     padding: calc(var(--padding) / 2) var(--padding);
 
-    cursor: pointer;
+    cursor:      pointer;
     user-select: none;
 
     transition: var(--transition);
@@ -36,6 +36,8 @@ export default {
 
   .button:active {
     transform: var(--transformActive);
+
+    -webkit-tap-highlight-color: transparent;
   }
 
   .button:focus {
@@ -43,5 +45,7 @@ export default {
     background:   var(--focusBackground);
     filter:       var(--focusFilter);
     border-color: var(--focusBorder);
+
+    -webkit-tap-highlight-color: transparent;
   }
 </style>

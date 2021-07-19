@@ -43,6 +43,16 @@ export default {
 
   .menu-link:active {
     transform: var(--transformActive);
+
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .menu-link:focus {
+    outline:      none;
+    filter:       var(--focusFilter);
+    border-color: var(--focusBorder);
+
+    -webkit-tap-highlight-color: transparent;
   }
 
   .menu-link-img {

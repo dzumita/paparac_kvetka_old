@@ -40,6 +40,8 @@ export default {
 
   .object:active {
     transform: var(--transformActive);
+
+    -webkit-tap-highlight-color: transparent;
   }
 
   .object:focus {
@@ -47,6 +49,8 @@ export default {
     background:   var(--focusBackground);
     filter:       var(--focusFilter);
     border-color: var(--focusBorder);
+
+    -webkit-tap-highlight-color: transparent;
   }
 
   .object-img {
