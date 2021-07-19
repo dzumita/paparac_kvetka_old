@@ -1,6 +1,6 @@
 <template>
   <button class="object">
-    <img class="object-img" :src="require(`../../assets/images/objects/${img}.png`)" :alt="title" :title="title">
+    <img class="object-img" :src="require(`../../assets/img/objects/${img}.png`)" :alt="title" :title="title">
   </button>
 </template>
 
