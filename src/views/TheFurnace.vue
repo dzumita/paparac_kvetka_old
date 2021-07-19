@@ -1,5 +1,5 @@
 <template>
-  <AppPageWrapper>
+  <AppPageWrapper grid-rows="1fr 3fr">
     <template #content>
       <AppFactory text="alloy" img="furnace" alt="furnace"/>
       <AppObjectLibrary/>

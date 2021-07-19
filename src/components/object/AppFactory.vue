@@ -11,7 +11,10 @@
       </div>
     </div>
 
-    <AppObjectLibrary/>
+    <div class="factory-list">
+      <p>Objects for {{text}}:</p>
+      <AppObjectLibrary/>
+    </div>
   </div>
 </template>
 
@@ -51,7 +54,8 @@ export default {
   }
 
   .factory-interface-active,
-  .factory-interface-result {
+  .factory-interface-result,
+  .factory-list {
     display:         flex;
     flex-direction:  column;
     justify-content: flex-start;
