@@ -2,7 +2,7 @@
   <div class="factory">
     <div class="factory-interface">
       <div class="factory-interface-result">
-        <AppObjectLibrary :objects="result" title="Result"/>
+        <AppObjectLibrary :objects="result" title="Result:"/>
       </div>
 
       <div class="factory-interface-active">
@@ -55,6 +55,8 @@ export default {
   }
 
   .factory-interface {
+    height: 100%;
+
     display: grid;
     gap:     var(--gap);
 
@@ -64,12 +66,17 @@ export default {
   .factory-interface-active,
   .factory-interface-result,
   .factory-list {
-    display:         flex;
-    flex-direction:  column;
-    justify-content: flex-start;
+    height: 100%;
+    width:  100%;
+
+    display:         grid;
     gap:             1rem;
 
     overflow: auto;
+  }
+
+  .factory-interface-active {
+    align-content: end;
   }
 
   .factory-interface-active img {

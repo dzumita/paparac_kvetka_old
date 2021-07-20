@@ -21,7 +21,7 @@ export default {
     title: {
       type: String,
       required: false,
-      default: 'Object Library'
+      default: 'Object Library:'
     }
   },
   setup (): { elements:number } {
