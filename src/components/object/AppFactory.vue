@@ -31,6 +31,7 @@ export default {
       required: true
     }
   },
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   setup () {
     const list = [
       { id: 11, name: 'waterClass', count: '1' },

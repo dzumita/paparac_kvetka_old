@@ -18,10 +18,6 @@
   font-family: var(--mainFont);
   font-size:   22px;
 
-  /*~~~Size~~~*/
-  --maxWidth:  2000px;
-  --maxHeight: 2000px;
-
   /*~~~Colors~~~*/
   --background:  var(--Flesh);
   --fontColor:   var(--DarkPurple);

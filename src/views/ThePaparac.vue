@@ -1,5 +1,5 @@
 <template>
-  <AppPageWrapper grid-rows="1fr 3fr">
+  <AppPageWrapper grid-rows="4fr 10fr">
     <template #content>
       <AppFactory text="merge" img="paparac" />
       <AppObjectLibrary :objects="inventory"/>

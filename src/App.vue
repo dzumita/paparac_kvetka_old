@@ -14,6 +14,7 @@ import AppMenu from '@/components/menu/AppMenu.vue'
 
 export default {
   components: { AppMenu },
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   setup () {
     const inventory = [
       { id: 0, name: 'empty', count: '1' },
@@ -72,9 +73,10 @@ export default {
 
     width:      100%;
     height:     100%;
+    max-width:  1000px;
+    max-height: 1000px;
+    min-width:  300px;
     padding:    var(--padding);
-    max-width:  var(--maxWidth);
-    max-height: var(--maxHeight);
 
     display:               grid;
     grid-template-rows:    calc(100% - 3.8rem) 3.8rem;
