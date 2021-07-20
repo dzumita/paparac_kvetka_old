@@ -1,5 +1,6 @@
 <template>
   <div class="object-library">
+    <h6 class="object-library-title">{{title}}</h6>
     <div class="object-library-content">
       <AppObject v-for="object in objects" :key="object.id" :name="object.name" :count="object.count"/>
     </div>
@@ -16,6 +17,11 @@ export default {
     objects: {
       type: Array,
       required: true
+    },
+    title: {
+      type: String,
+      required: false,
+      default: 'Object Library'
     }
   },
   setup (): { elements:number } {
@@ -42,8 +48,14 @@ export default {
     grid-template-columns: repeat(auto-fill, var(--objectIconSize));
     grid-template-rows:    repeat(auto-fill, var(--objectIconSize));
     grid-gap:              var(--padding);
-    justify-content:       space-evenly;
+    justify-content:       space-between;
 
     overflow: auto;
+  }
+
+  .object-library-title {
+    font-size:      1rem;
+    font-weight:    normal;
+    padding-bottom: var(--padding);
   }
 </style>

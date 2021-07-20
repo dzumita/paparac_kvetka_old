@@ -72,7 +72,7 @@
 }
 
 /*~~~Text~~~*/
-h1, p, span {
+h1, h6, p, span {
   font-family: var(--mainFont);
 
   width:  fit-content;

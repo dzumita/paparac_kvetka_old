@@ -2,8 +2,7 @@
   <div class="factory">
     <div class="factory-interface">
       <div class="factory-interface-result">
-        <p>Result:</p>
-        <AppObjectLibrary :objects="result"/>
+        <AppObjectLibrary :objects="result" title="Result"/>
       </div>
 
       <div class="factory-interface-active">
@@ -12,8 +11,7 @@
     </div>
 
     <div class="factory-list">
-      <p>Objects for {{text}}:</p>
-      <AppObjectLibrary :objects="list"/>
+      <AppObjectLibrary :objects="list" :title="`Objects for ${text}:`"/>
     </div>
   </div>
 </template>
